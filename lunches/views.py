@@ -35,7 +35,7 @@ class Item(generics.RetrieveAPIView):
     serializer_class = serialisers.ItemSerialiser
 
 
-class OrdersCreate(generics.ListCreateAPIView):
+class OrdersListCreate(generics.ListCreateAPIView):
     queryset = models.Order.objects.all()
     serializer_class = serialisers.OrderSerialiser
 
@@ -53,7 +53,7 @@ class OrdersCreate(generics.ListCreateAPIView):
         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
 
-class OrdersList(generics.RetrieveDestroyAPIView):
+class OrdersDetail(generics.RetrieveDestroyAPIView):
     queryset = models.Order.objects.all()
     serializer_class = serialisers.OrderSerialiser
 
