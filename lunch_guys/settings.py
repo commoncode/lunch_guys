@@ -25,7 +25,7 @@ SECRET_KEY = 'fy5$qiywyl#ahl7e6jjz($s0#6-)br3h(s2b2ze(r@g#&$_x75'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 SHELL_PLUS = 'ipython'
-ALLOWED_HOSTS = ['localhost', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1:8000', '128.199.168.155']
 
 
 # Application definition
