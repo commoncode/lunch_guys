@@ -1,0 +1,61 @@
+
+
+
+<html>
+<head>
+
+</head>
+<body>
+<title>Lunch Guys API</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body {
+background-color:#ffffff;
+background-repeat:no-repeat;
+background-position:top left;
+background-attachment:fixed;
+}
+h1{
+font-family:Arial,
+sans-serif;
+font-variant:small-caps;
+color:#000000;
+background-color:#ffffff;
+}p {
+font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
+</style>
+<h1>Lunch Guys API</h1>
+<p>Lunch Guys API is located: /api_v1</p>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-9hbo{font-weight:bold;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-9hbo">URL<br></th>
+    <th class="tg-9hbo">Allowed Methods</th>
+    <th class="tg-9hbo">Description<br></th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">/api_v1/menu/</td>
+    <td class="tg-yw4l">GET</td>
+    <td class="tg-yw4l">returns todays menu<br></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">/api_v1/orders/</td>
+    <td class="tg-yw4l">GET POST<br></td>
+    <td class="tg-yw4l">lists all orders and can accept <br>POST to create new orders<br></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">/api_v1/orders/&lt;order pk&gt;</td>
+    <td class="tg-yw4l">GET DELETE<br></td>
+    <td class="tg-yw4l">get details of an order and delete an order<br></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">/api_v1/items/&lt;item pk&gt;</td>
+    <td class="tg-yw4l">GET</td>
+    <td class="tg-yw4l">get item details<br></td>
+  </tr>
+</table>
