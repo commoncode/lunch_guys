@@ -1,4 +1,5 @@
 from django.core.exceptions import ObjectDoesNotExist
+from django.views import generic
 from django.utils import timezone
 from rest_framework import generics, status
 from rest_framework.response import Response
@@ -7,12 +8,12 @@ from . import models
 from . import serialisers
 
 
-class Menu(generics.ListAPIView):
-    queryset = models.Menu.objects.all()
-    serializer_class = serialisers.MenuSerialiser
+class Index(generic.TemplateView):
+    template_name = 'lunches/index.html'
 
 
 class MenuToday(generics.RetrieveAPIView):
+
     queryset = models.Menu.objects.all()
     serializer_class = serialisers.MenuSerialiser
 
